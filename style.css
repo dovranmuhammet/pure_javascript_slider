@@ -32,6 +32,61 @@
   #RESET
 \*-----------------------------------*/
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+button,
+ion-icon {
+  display: block;
+}
+
+img {
+  height: auto;
+  user-select: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  font-size: 1.6rem;
+  padding-block: 48px;
+  overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
+  background-color: var(--surface-variant);
+}
+
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
