@@ -193,3 +193,75 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/**
+ * responsive for large than 567px screen
+ */
+
+@media (min-width: 567px) {
+  .container {
+    max-width: 480px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .card-slider {
+    --slider-items: 2;
+  }
+}
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .card-slider {
+    --slider-items: 3;
+  }
+}
+
+/**
+ * responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .card-slider {
+    --slider-items: 4;
+  }
+}
+
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+
+  .banner-slider {
+    --slider-items: 2;
+  }
+
+  .card-slider {
+    --slider-items: 5;
+  }
+}
+
+/**
+ * responsive for large than 1400px screen
+ */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
